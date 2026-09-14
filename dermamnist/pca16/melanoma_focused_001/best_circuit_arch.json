@@ -1,0 +1,117 @@
+{
+  "layers": [
+    {
+      "type": "Qcycle",
+      "mapping": "U_13",
+      "stride": 1,
+      "step": 1,
+      "offset": 0,
+      "boundary": "periodic",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_SO4",
+      "stride": 2,
+      "step": 3,
+      "offset": 1,
+      "boundary": "open",
+      "share_weights": false
+    },
+    {
+      "type": "Qmask",
+      "mapping": "pool_ansatz",
+      "global_pattern": "1*1",
+      "strides": [
+        7,
+        7,
+        7
+      ],
+      "steps": [
+        2,
+        3,
+        6
+      ],
+      "offsets": [
+        0,
+        0,
+        0
+      ],
+      "boundaries": [
+        "periodic",
+        "periodic",
+        "periodic"
+      ]
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_SU4",
+      "stride": 1,
+      "step": 2,
+      "offset": 0,
+      "boundary": "periodic",
+      "share_weights": false
+    },
+    {
+      "type": "Qmask",
+      "mapping": "pool_ansatz",
+      "global_pattern": "*!",
+      "strides": [
+        4,
+        4,
+        3
+      ],
+      "steps": [
+        1,
+        5,
+        1
+      ],
+      "offsets": [
+        0,
+        1,
+        0
+      ],
+      "boundaries": [
+        "open",
+        "open",
+        "periodic"
+      ]
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_13",
+      "stride": 6,
+      "step": 1,
+      "offset": 0,
+      "boundary": "periodic",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_gate",
+      "stride": 1,
+      "step": 4,
+      "offset": 1,
+      "boundary": "periodic",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_gate",
+      "stride": 1,
+      "step": 4,
+      "offset": 1,
+      "boundary": "periodic",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_6",
+      "stride": 7,
+      "step": 3,
+      "offset": 1,
+      "boundary": "open",
+      "share_weights": false
+    }
+  ]
+}

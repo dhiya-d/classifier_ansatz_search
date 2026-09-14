@@ -1,0 +1,28 @@
+{
+  "motif_id": "-7750875075844063150",
+  "val_acc": 0.7307692307692307,
+  "fitness": 0.21346184242698857,
+  "bal_acc": 0.7706766914652232,
+  "min_recall": 0.6842105261957525,
+  "n_params": 56,
+  "n_gate_arities": 18,
+  "generation": 0,
+  "evo_step": 0,
+  "mutation_type": "random",
+  "n_layers": 6,
+  "n_conv_layers": 1,
+  "n_pool_layers": 5,
+  "layer_signature": "C-P-P-P-P-P",
+  "class_names": [
+    "Malignant",
+    "Normal/Benign"
+  ],
+  "W_CLASS": [
+    0.7,
+    0.3
+  ],
+  "N_QUBITS": 8,
+  "N_READOUT_QUBITS": 1,
+  "PCA_COMPONENTS": 8,
+  "encoding": "single (RY per qubit)"
+}

@@ -1,0 +1,138 @@
+{
+  "layers": [
+    {
+      "type": "Qcycle",
+      "mapping": "U_SU4",
+      "stride": 4,
+      "step": 2,
+      "offset": 1,
+      "boundary": "open",
+      "share_weights": false
+    },
+    {
+      "type": "Qmask",
+      "mapping": "pool_ansatz",
+      "global_pattern": "101",
+      "strides": [
+        5,
+        4,
+        1
+      ],
+      "steps": [
+        5,
+        7,
+        7
+      ],
+      "offsets": [
+        0,
+        1,
+        3
+      ],
+      "boundaries": [
+        "open",
+        "open",
+        "open"
+      ]
+    },
+    {
+      "type": "Qmask",
+      "mapping": "pool_U",
+      "global_pattern": "!0!",
+      "strides": [
+        6,
+        4,
+        4
+      ],
+      "steps": [
+        1,
+        4,
+        3
+      ],
+      "offsets": [
+        1,
+        0,
+        0
+      ],
+      "boundaries": [
+        "open",
+        "periodic",
+        "open"
+      ]
+    },
+    {
+      "type": "Qmask",
+      "mapping": "pool_U",
+      "global_pattern": "!0",
+      "strides": [
+        6,
+        7,
+        3
+      ],
+      "steps": [
+        7,
+        4,
+        2
+      ],
+      "offsets": [
+        1,
+        0,
+        0
+      ],
+      "boundaries": [
+        "open",
+        "open",
+        "periodic"
+      ]
+    },
+    {
+      "type": "Qmask",
+      "mapping": "pool_U",
+      "global_pattern": "*1",
+      "strides": [
+        6,
+        7,
+        2
+      ],
+      "steps": [
+        6,
+        2,
+        3
+      ],
+      "offsets": [
+        2,
+        1,
+        1
+      ],
+      "boundaries": [
+        "periodic",
+        "periodic",
+        "open"
+      ]
+    },
+    {
+      "type": "Qmask",
+      "mapping": "pool_ansatz",
+      "global_pattern": "1*",
+      "strides": [
+        3,
+        4,
+        3
+      ],
+      "steps": [
+        4,
+        2,
+        7
+      ],
+      "offsets": [
+        0,
+        1,
+        3
+      ],
+      "boundaries": [
+        "periodic",
+        "periodic",
+        "open"
+      ]
+    }
+  ]
+}

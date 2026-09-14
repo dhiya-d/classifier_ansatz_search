@@ -1,0 +1,110 @@
+{
+  "layers": [
+    {
+      "type": "Qcycle",
+      "mapping": "U_SO4",
+      "stride": 3,
+      "step": 5,
+      "offset": 0,
+      "boundary": "periodic",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_SU4",
+      "stride": 7,
+      "step": 4,
+      "offset": 0,
+      "boundary": "open",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_14",
+      "stride": 1,
+      "step": 1,
+      "offset": 0,
+      "boundary": "open",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_9",
+      "stride": 4,
+      "step": 2,
+      "offset": 0,
+      "boundary": "open",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_13",
+      "stride": 4,
+      "step": 2,
+      "offset": 1,
+      "boundary": "periodic",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_15",
+      "stride": 7,
+      "step": 6,
+      "offset": 0,
+      "boundary": "open",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_TTN",
+      "stride": 3,
+      "step": 7,
+      "offset": 0,
+      "boundary": "periodic",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_5",
+      "stride": 6,
+      "step": 6,
+      "offset": 0,
+      "boundary": "periodic",
+      "share_weights": false
+    },
+    {
+      "type": "Qmask",
+      "mapping": "pool_ansatz",
+      "global_pattern": "0!0",
+      "strides": [
+        1,
+        2,
+        7
+      ],
+      "steps": [
+        6,
+        7,
+        5
+      ],
+      "offsets": [
+        0,
+        0,
+        0
+      ],
+      "boundaries": [
+        "open",
+        "open",
+        "open"
+      ]
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_6",
+      "stride": 3,
+      "step": 1,
+      "offset": 3,
+      "boundary": "open",
+      "share_weights": false
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+2026-08-30 12:15:13,654 INFO 
+============================================================
+2026-08-30 12:15:13,654 INFO SWEEP RUN: baseline  (PCA-16)
+2026-08-30 12:15:13,654 INFO Params: {'label': 'baseline', 'LR_EVAL': 0.003, 'N_EPOCHS_EVAL': 60, 'INIT_POP': 10, 'MAX_EVO_STEPS': 10, 'W_CLASS': [0.7, 0.3]}
+2026-08-30 12:15:13,654 INFO ============================================================
+2026-08-30 12:15:13,654 INFO 
+--- Linear classifier baseline (on 16 PCA features) ---
+2026-08-30 12:15:13,728 INFO   val   | acc=0.7179 | bal_acc=0.7469 | min_recall=0.6842 | auc=0.8655
+2026-08-30 12:15:13,728 INFO          per-class: ['0.810', '0.684']
+2026-08-30 12:15:13,731 INFO   test  | acc=0.7288 | bal_acc=0.7158 | min_recall=0.6875 | auc=0.8161
+2026-08-30 12:15:13,731 INFO          per-class: ['0.687', '0.744']
+2026-08-30 12:15:13,732 INFO Linear baseline saved → experiments/pca16/sweep/baseline_001/linear_baseline.json
+2026-08-30 12:15:13,732 INFO Evaluating initial population...
+2026-08-30 12:15:13,732 INFO Config: LR=0.003  epochs=60  pop=10  steps=10  W_CLASS=[0.7, 0.3]
+2026-08-30 12:15:13,732 INFO Encoding: dense (RX + RY per qubit), 16 PCA components → 8 qubits
+2026-08-30 12:15:13,732 INFO Structure: variable length 3–10 layers  | P_CONV=0.6  | min conv=1  | min pool=0  | readout qubits=1
+2026-08-30 12:15:13,793 INFO Initial population: 10 valid genotypes
+2026-08-30 14:16:15,334 INFO   random     | C-C-P                  | fitness=0.3812 | val_acc=0.7179 | bal_acc=0.6717 | min_recall=0.5714 | params=54
+2026-08-30 14:16:15,335 INFO   random     | C-P-P                  | fitness=0.3048 | val_acc=0.7179 | bal_acc=0.7168 | min_recall=0.7143 | params=130
+2026-08-30 14:16:15,337 INFO   random     | C-C-P-P-C              | fitness=0.3131 | val_acc=0.7692 | bal_acc=0.7368 | min_recall=0.6667 | params=99
+2026-08-30 14:16:15,338 INFO   random     | C-C-C-P-P              | fitness=0.2601 | val_acc=0.7564 | bal_acc=0.7581 | min_recall=0.7544 | params=80
+2026-08-30 14:16:15,340 INFO   random     | C-C-C-C-P              | fitness=0.2664 | val_acc=0.7436 | bal_acc=0.7494 | min_recall=0.7368 | params=88
+2026-08-30 14:16:15,341 INFO   random     | C-C-C-C                | fitness=0.3379 | val_acc=0.6282 | bal_acc=0.6554 | min_recall=0.5965 | params=73
+2026-08-30 14:16:15,342 INFO   random     | C-C-C-P-P-C-P-P        | fitness=0.2761 | val_acc=0.7308 | bal_acc=0.7406 | min_recall=0.7193 | params=73
+2026-08-30 14:16:15,344 INFO   random     | C-C-P-C                | fitness=0.3366 | val_acc=0.7051 | bal_acc=0.6930 | min_recall=0.6667 | params=92
+2026-08-30 14:16:15,349 INFO   random     | C-P-C-P-C-C-C-P-P      | fitness=0.3522 | val_acc=0.6923 | bal_acc=0.6842 | min_recall=0.6667 | params=90
+2026-08-30 14:16:15,351 INFO   random     | C-C-C-C-C-P            | fitness=0.2782 | val_acc=0.7179 | bal_acc=0.7318 | min_recall=0.7018 | params=76
+2026-08-30 14:16:15,351 INFO 
+=== Evo step 1/10 ===
+2026-08-30 14:16:15,351 INFO Top-3: 31072483… fit=0.2601  |  -7699227… fit=0.2664  |  47973934… fit=0.2761
+2026-08-30 14:16:15,358 INFO Generated 9 valid novel children
+2026-08-30 15:53:45,994 INFO   crossover  | C-C-C-P                | fitness=0.2863 | val_acc=0.6795 | bal_acc=0.7055 | min_recall=0.6491 | params=50
+2026-08-30 15:53:45,996 INFO   crossover  | C-C-C-C-C              | fitness=0.2763 | val_acc=0.7179 | bal_acc=0.7318 | min_recall=0.7018 | params=83
+2026-08-30 15:53:45,997 INFO   crossover  | C-C-C-P-P              | fitness=0.2781 | val_acc=0.7179 | bal_acc=0.7318 | min_recall=0.7018 | params=98
+2026-08-30 15:53:45,998 INFO   crossover  | C-C-C-C                | fitness=0.3023 | val_acc=0.6538 | bal_acc=0.6880 | min_recall=0.6140 | params=96
+2026-08-30 15:53:46,000 INFO   crossover  | C-C-P-P                | fitness=0.3339 | val_acc=0.7051 | bal_acc=0.6930 | min_recall=0.6667 | params=70
+2026-08-30 15:53:46,001 INFO   crossover  | C-C-C-C-C-C-C-P        | fitness=0.2596 | val_acc=0.7821 | bal_acc=0.7757 | min_recall=0.7619 | params=113
+2026-08-30 15:53:46,003 INFO   mutate     | C-C-C-C                | fitness=0.5481 | val_acc=0.5385 | bal_acc=0.5038 | min_recall=0.4286 | params=122
+2026-08-30 15:53:46,004 INFO   mutate     | C-C-C-P                | fitness=0.2861 | val_acc=0.7564 | bal_acc=0.7431 | min_recall=0.7143 | params=78
+2026-08-30 15:53:46,011 INFO   mutate     | C-C-C-C-C-P-P          | fitness=0.3008 | val_acc=0.7436 | bal_acc=0.7343 | min_recall=0.7143 | params=109
+2026-08-30 15:53:46,011 INFO Best so far → val_acc=0.7821  bal_acc=0.7757  min_recall=0.7619  fitness=0.2596  params=113  id=-4614106…
+2026-08-30 15:53:46,013 INFO Memory table saved.
+2026-08-30 15:53:46,013 INFO 
+=== Evo step 2/10 ===
+2026-08-30 15:53:46,013 INFO Top-3: -4614106… fit=0.2596  |  31072483… fit=0.2601  |  52338205… fit=0.3379
+2026-08-30 15:53:46,022 INFO Generated 9 valid novel children
+2026-08-30 17:44:32,948 INFO   crossover  | C-C-C-C-C-C-P-P        | fitness=0.2765 | val_acc=0.7436 | bal_acc=0.7494 | min_recall=0.7368 | params=123
+2026-08-30 17:44:32,950 INFO   crossover  | C-C-C-C-C-C-C-C-C-P    | fitness=0.3242 | val_acc=0.7179 | bal_acc=0.7168 | min_recall=0.7143 | params=165
+2026-08-30 17:44:32,952 INFO   crossover  | C-C-C-C-P              | fitness=0.3028 | val_acc=0.7179 | bal_acc=0.7168 | min_recall=0.7143 | params=70
+2026-08-30 17:44:32,953 INFO   crossover  | C-C-C-P-P              | fitness=0.2815 | val_acc=0.7692 | bal_acc=0.7519 | min_recall=0.7143 | params=68
+2026-08-30 17:44:32,955 INFO   crossover  | C-C-C-C-C-P            | fitness=0.2822 | val_acc=0.7821 | bal_acc=0.7607 | min_recall=0.7143 | params=101
+2026-08-30 17:44:32,957 INFO   crossover  | C-C-C-C-C-P-P-C-C-P    | fitness=0.2623 | val_acc=0.7179 | bal_acc=0.7469 | min_recall=0.6842 | params=117
+2026-08-30 17:44:32,962 INFO   mutate     | C-C-C-C                | fitness=0.3316 | val_acc=0.6410 | bal_acc=0.6642 | min_recall=0.6140 | params=66
+2026-08-30 17:44:32,963 INFO   mutate     | C-C-C-C-C              | fitness=0.3418 | val_acc=0.6410 | bal_acc=0.6642 | min_recall=0.6140 | params=144
+2026-08-30 17:44:32,965 INFO   mutate     | C-C-C-C-C-C-P-P        | fitness=0.3610 | val_acc=0.6923 | bal_acc=0.6842 | min_recall=0.6667 | params=189
+2026-08-30 17:44:32,965 INFO Best so far → val_acc=0.7821  bal_acc=0.7757  min_recall=0.7619  fitness=0.2596  params=113  id=-4614106…
+2026-08-30 17:44:32,968 INFO Memory table saved.
+2026-08-30 17:44:32,968 INFO 
+=== Evo step 3/10 ===
+2026-08-30 17:44:32,968 INFO Top-3: -4614106… fit=0.2596  |  31072483… fit=0.2601  |  49989528… fit=0.3028
+2026-08-30 17:44:32,984 INFO Generated 9 valid novel children
+2026-08-30 19:42:30,719 INFO   crossover  | C-C-C-C-P              | fitness=0.2482 | val_acc=0.7179 | bal_acc=0.7469 | min_recall=0.6842 | params=81
+2026-08-30 19:42:30,720 INFO   crossover  | C-C-C-C-P              | fitness=0.3037 | val_acc=0.7308 | bal_acc=0.7256 | min_recall=0.7143 | params=125
+2026-08-30 19:42:30,722 INFO   crossover  | C-C-C-P-P              | fitness=0.2654 | val_acc=0.7436 | bal_acc=0.7494 | min_recall=0.7368 | params=80
+2026-08-30 19:42:30,723 INFO   crossover  | C-C-P                  | fitness=0.2974 | val_acc=0.7179 | bal_acc=0.7168 | min_recall=0.7143 | params=58
+2026-08-30 19:42:30,725 INFO   crossover  | C-C-C-C-C-P-P-C-P      | fitness=0.2774 | val_acc=0.7436 | bal_acc=0.7494 | min_recall=0.7368 | params=113
+2026-08-30 19:42:30,732 INFO   crossover  | C-C-C-C-C-P-P          | fitness=0.2578 | val_acc=0.7179 | bal_acc=0.7469 | min_recall=0.6842 | params=131
+2026-08-30 19:42:30,733 INFO   mutate     | C-C-C-C-C-C-C-P        | fitness=0.2719 | val_acc=0.7564 | bal_acc=0.7581 | min_recall=0.7544 | params=127
+2026-08-30 19:42:30,735 INFO   mutate     | C-C-C-P                | fitness=0.3602 | val_acc=0.7179 | bal_acc=0.6867 | min_recall=0.6190 | params=100
+2026-08-30 19:42:30,736 INFO   mutate     | C-C-C-P-C              | fitness=0.3600 | val_acc=0.7179 | bal_acc=0.6867 | min_recall=0.6190 | params=81
+2026-08-30 19:42:30,736 INFO Best so far → val_acc=0.7179  bal_acc=0.7469  min_recall=0.6842  fitness=0.2482  params=81  id=-3404857…
+2026-08-30 19:42:30,738 INFO Memory table saved.
+2026-08-30 19:42:30,738 INFO 
+=== Evo step 4/10 ===
+2026-08-30 19:42:30,738 INFO Top-3: -3404857… fit=0.2482  |  64202699… fit=0.2578  |  33119282… fit=0.3242
+2026-08-30 19:42:30,747 INFO Generated 9 valid novel children
+2026-08-30 21:26:31,988 INFO   crossover  | C-C-C-C-C-C-P-P        | fitness=0.2790 | val_acc=0.7436 | bal_acc=0.7494 | min_recall=0.7368 | params=146
+2026-08-30 21:26:31,989 INFO   crossover  | C-C-C-C-P-C-C-C-C-C    | fitness=0.2695 | val_acc=0.7692 | bal_acc=0.7669 | min_recall=0.7619 | params=117
+2026-08-30 21:26:31,990 INFO   crossover  | C-C-C-C-P              | fitness=0.3271 | val_acc=0.7308 | bal_acc=0.7105 | min_recall=0.6667 | params=81
+2026-08-30 21:26:31,992 INFO   crossover  | C-C-C-C-C-P-C-P        | fitness=0.3410 | val_acc=0.7179 | bal_acc=0.7018 | min_recall=0.6667 | params=103
+2026-08-30 21:26:31,998 INFO   crossover  | C-C-C-C-C-P-C-C-C-C    | fitness=0.2764 | val_acc=0.7564 | bal_acc=0.7581 | min_recall=0.7544 | params=133
+2026-08-30 21:26:31,999 INFO   crossover  | C-C-C-C-C-P-P-C-C-C    | fitness=0.3370 | val_acc=0.7436 | bal_acc=0.7193 | min_recall=0.6667 | params=125
+2026-08-30 21:26:32,001 INFO   mutate     | C-C-C-C-C-P            | fitness=0.3249 | val_acc=0.7436 | bal_acc=0.7193 | min_recall=0.6667 | params=90
+2026-08-30 21:26:32,002 INFO   mutate     | C-C-C-C-C-C-P-P        | fitness=0.2681 | val_acc=0.7051 | bal_acc=0.7381 | min_recall=0.6667 | params=158
+2026-08-30 21:26:32,004 INFO   mutate     | C-C-C-C-P-P-C-P        | fitness=0.2572 | val_acc=0.7179 | bal_acc=0.7469 | min_recall=0.6842 | params=109
+2026-08-30 21:26:32,004 INFO Best so far → val_acc=0.7179  bal_acc=0.7469  min_recall=0.6842  fitness=0.2482  params=81  id=-3404857…
+2026-08-30 21:26:32,006 INFO Memory table saved.
+2026-08-30 21:26:32,006 INFO 
+=== Evo step 5/10 ===
+2026-08-30 21:26:32,007 INFO Top-3: -3404857… fit=0.2482  |  -1811154… fit=0.2572  |  14892033… fit=0.3600
+2026-08-30 21:26:32,018 INFO Generated 9 valid novel children
+2026-08-30 23:47:39,547 INFO   crossover  | C-C-C-C-C-C-C-P-P-C    | fitness=0.3533 | val_acc=0.7179 | bal_acc=0.7018 | min_recall=0.6667 | params=176
+2026-08-30 23:47:39,557 INFO   crossover  | C-C-C-C-C-C-P-P        | fitness=0.2982 | val_acc=0.7051 | bal_acc=0.7231 | min_recall=0.6842 | params=173
+2026-08-30 23:47:39,559 INFO   crossover  | C-C-C-C-P-P-C-C-P      | fitness=0.2677 | val_acc=0.7692 | bal_acc=0.7669 | min_recall=0.7619 | params=121
+2026-08-30 23:47:39,560 INFO   crossover  | C-P-P                  | fitness=0.3016 | val_acc=0.7051 | bal_acc=0.7080 | min_recall=0.7018 | params=50
+2026-08-30 23:47:39,562 INFO   crossover  | C-C-C-C-C-C-C-P        | fitness=0.3130 | val_acc=0.7308 | bal_acc=0.7256 | min_recall=0.7143 | params=147
+2026-08-30 23:47:39,563 INFO   crossover  | C-C-C-C-C-P-C-P        | fitness=0.2773 | val_acc=0.7436 | bal_acc=0.7494 | min_recall=0.7368 | params=131
+2026-08-30 23:47:39,565 INFO   mutate     | C-C-C-C-C-P            | fitness=0.2516 | val_acc=0.7179 | bal_acc=0.7469 | min_recall=0.6842 | params=93
+2026-08-30 23:47:39,566 INFO   mutate     | C-C-C-C-P-P-C-C-P      | fitness=0.3209 | val_acc=0.7051 | bal_acc=0.7080 | min_recall=0.7018 | params=111
+2026-08-30 23:47:39,572 INFO   mutate     | C-C-C-C-C-P-P          | fitness=0.2894 | val_acc=0.7179 | bal_acc=0.7318 | min_recall=0.7018 | params=159
+2026-08-30 23:47:39,572 INFO Best so far → val_acc=0.7179  bal_acc=0.7469  min_recall=0.6842  fitness=0.2482  params=81  id=-3404857…
+2026-08-30 23:47:39,575 INFO Memory table saved.
+2026-08-30 23:47:39,575 INFO 
+=== Evo step 6/10 ===
+2026-08-30 23:47:39,575 INFO Top-3: -3404857… fit=0.2482  |  67680800… fit=0.2516  |  18274614… fit=0.2822
+2026-08-30 23:47:39,586 INFO Generated 9 valid novel children
+2026-08-31 02:55:45,131 INFO   crossover  | C-C-C-C-C-C-C-P        | fitness=0.2482 | val_acc=0.7436 | bal_acc=0.7644 | min_recall=0.7193 | params=120
+2026-08-31 02:55:45,133 INFO   crossover  | C-C-C-C-P-C-P-P-C-P    | fitness=0.2997 | val_acc=0.6923 | bal_acc=0.7143 | min_recall=0.6667 | params=105
+2026-08-31 02:55:45,135 INFO   crossover  | C-C-C-C-C-C-C-C-C-P    | fitness=0.3737 | val_acc=0.6667 | bal_acc=0.6667 | min_recall=0.6667 | params=166
+2026-08-31 02:55:45,136 INFO   crossover  | C-C-C-C-C-P-C-C-C-C    | fitness=0.2619 | val_acc=0.6538 | bal_acc=0.7180 | min_recall=0.5789 | params=127
+2026-08-31 02:55:45,138 INFO   crossover  | C-C-C-C-P-P-C-P-C-C    | fitness=0.3517 | val_acc=0.7051 | bal_acc=0.6930 | min_recall=0.6667 | params=117
+2026-08-31 02:55:45,146 INFO   crossover  | C-C-C-C-P-P-P          | fitness=0.2619 | val_acc=0.7692 | bal_acc=0.7669 | min_recall=0.7619 | params=107
+2026-08-31 02:55:45,148 INFO   mutate     | C-C-C-P                | fitness=0.2403 | val_acc=0.7308 | bal_acc=0.7556 | min_recall=0.7018 | params=77
+2026-08-31 02:55:45,149 INFO   mutate     | C-C-C-C-C-P-C-P        | fitness=0.3574 | val_acc=0.6795 | bal_acc=0.6754 | min_recall=0.6667 | params=107
+2026-08-31 02:55:45,151 INFO   mutate     | C-C-C-C-P-P-P-C-C-P    | fitness=0.2521 | val_acc=0.7436 | bal_acc=0.7644 | min_recall=0.7193 | params=121
+2026-08-31 02:55:45,151 INFO Best so far → val_acc=0.7308  bal_acc=0.7556  min_recall=0.7018  fitness=0.2403  params=77  id=15884763…
+2026-08-31 02:55:45,155 INFO Memory table saved.
+2026-08-31 02:55:45,155 INFO 
+=== Evo step 7/10 ===
+2026-08-31 02:55:45,156 INFO Top-3: 15884763… fit=0.2403  |  77626112… fit=0.2482  |  -3404857… fit=0.2482
+2026-08-31 02:55:45,165 INFO Generated 9 valid novel children
+2026-08-31 04:54:38,388 INFO   crossover  | C-C-C-C-C-C-C-P        | fitness=0.3009 | val_acc=0.6923 | bal_acc=0.7143 | min_recall=0.6667 | params=150
+2026-08-31 04:54:38,390 INFO   crossover  | C-C-C-C-C-C-P          | fitness=0.3061 | val_acc=0.7308 | bal_acc=0.7256 | min_recall=0.7143 | params=108
+2026-08-31 04:54:38,391 INFO   crossover  | C-C-C-C-C-C-C-C-C-P    | fitness=0.3649 | val_acc=0.6923 | bal_acc=0.6842 | min_recall=0.6667 | params=185
+2026-08-31 04:54:38,396 INFO   crossover  | C-C-C-C-C-C-P          | fitness=0.2999 | val_acc=0.6795 | bal_acc=0.7055 | min_recall=0.6491 | params=116
+2026-08-31 04:54:38,398 INFO   crossover  | C-C-P                  | fitness=0.2524 | val_acc=0.6923 | bal_acc=0.7293 | min_recall=0.6491 | params=62
+2026-08-31 04:54:38,399 INFO   crossover  | C-C-C-C-C-C-C-C-C-P    | fitness=0.2886 | val_acc=0.7308 | bal_acc=0.7406 | min_recall=0.7193 | params=147
+2026-08-31 04:54:38,401 INFO   mutate     | P-C-C-C-P              | fitness=0.2403 | val_acc=0.7308 | bal_acc=0.7556 | min_recall=0.7018 | params=60
+2026-08-31 04:54:38,402 INFO   mutate     | C-C-C-C-C-C-P          | fitness=0.3131 | val_acc=0.7821 | bal_acc=0.7456 | min_recall=0.6667 | params=108
+2026-08-31 04:54:38,403 INFO   mutate     | C-C-C-C-C              | fitness=0.4072 | val_acc=0.6026 | bal_acc=0.6078 | min_recall=0.5965 | params=82
+2026-08-31 04:54:38,404 INFO Best so far → val_acc=0.7308  bal_acc=0.7556  min_recall=0.7018  fitness=0.2403  params=77  id=15884763…
+2026-08-31 04:54:38,407 INFO Memory table saved.
+2026-08-31 04:54:38,407 INFO 
+=== Evo step 8/10 ===
+2026-08-31 04:54:38,407 INFO Top-3: 15884763… fit=0.2403  |  -4515423… fit=0.2403  |  77626112… fit=0.2482
+2026-08-31 04:54:38,416 INFO Generated 9 valid novel children
+2026-08-31 06:08:22,386 INFO   crossover  | C-C-C-P-C-P            | fitness=0.2927 | val_acc=0.7564 | bal_acc=0.7431 | min_recall=0.7143 | params=99
+2026-08-31 06:08:22,387 INFO   crossover  | C-C-C-C-P              | fitness=0.2936 | val_acc=0.6795 | bal_acc=0.7055 | min_recall=0.6491 | params=97
+2026-08-31 06:08:22,389 INFO   crossover  | P-C-C-C-C-C-P          | fitness=0.3321 | val_acc=0.7308 | bal_acc=0.7105 | min_recall=0.6667 | params=90
+2026-08-31 06:08:22,394 INFO   crossover  | P-C-C-C-C-P            | fitness=0.3119 | val_acc=0.7051 | bal_acc=0.7080 | min_recall=0.7018 | params=86
+2026-08-31 06:08:22,395 INFO   crossover  | C-C-C-C-P-C-C-C-P      | fitness=0.3113 | val_acc=0.7308 | bal_acc=0.7256 | min_recall=0.7143 | params=116
+2026-08-31 06:08:22,397 INFO   crossover  | C-C-C-C-P              | fitness=0.2506 | val_acc=0.7821 | bal_acc=0.7757 | min_recall=0.7619 | params=88
+2026-08-31 06:08:22,398 INFO   mutate     | C-C-C-P                | fitness=0.3403 | val_acc=0.6923 | bal_acc=0.6842 | min_recall=0.6667 | params=77
+2026-08-31 06:08:22,400 INFO   mutate     | C-P-C-C-C-P            | fitness=0.3044 | val_acc=0.7179 | bal_acc=0.7168 | min_recall=0.7143 | params=66
+2026-08-31 06:08:22,401 INFO   mutate     | C-C-P-C-P-P            | fitness=0.3899 | val_acc=0.7179 | bal_acc=0.6717 | min_recall=0.5714 | params=74
+2026-08-31 06:08:22,401 INFO Best so far → val_acc=0.7308  bal_acc=0.7556  min_recall=0.7018  fitness=0.2403  params=77  id=15884763…
+2026-08-31 06:08:22,405 INFO Memory table saved.
+2026-08-31 06:08:22,405 INFO 
+=== Evo step 9/10 ===
+2026-08-31 06:08:22,405 INFO Top-3: 15884763… fit=0.2403  |  -4515423… fit=0.2403  |  -8557242… fit=0.3044
+2026-08-31 06:08:22,415 INFO Generated 9 valid novel children
+2026-08-31 08:20:42,406 INFO   crossover  | C-C-C-P-C-C-P          | fitness=0.3105 | val_acc=0.7179 | bal_acc=0.7168 | min_recall=0.7143 | params=99
+2026-08-31 08:20:42,411 INFO   crossover  | C-C-C-C-P-C-P          | fitness=0.3093 | val_acc=0.7179 | bal_acc=0.7168 | min_recall=0.7143 | params=88
+2026-08-31 08:20:42,413 INFO   crossover  | P-C-C-C-P-C-P          | fitness=0.2970 | val_acc=0.7436 | bal_acc=0.7343 | min_recall=0.7143 | params=74
+2026-08-31 08:20:42,414 INFO   crossover  | P-C-C-C-C-C-C-P-C-P    | fitness=0.2785 | val_acc=0.7436 | bal_acc=0.7494 | min_recall=0.7368 | params=104
+2026-08-31 08:20:42,416 INFO   crossover  | C-C-C-C-C-C-P          | fitness=0.2823 | val_acc=0.7308 | bal_acc=0.7406 | min_recall=0.7193 | params=143
+2026-08-31 08:20:42,417 INFO   crossover  | C-C-C-C-C-P            | fitness=0.3166 | val_acc=0.7051 | bal_acc=0.7080 | min_recall=0.7018 | params=123
+2026-08-31 08:20:42,419 INFO   mutate     | C-C-C-P                | fitness=0.3246 | val_acc=0.7308 | bal_acc=0.7105 | min_recall=0.6667 | params=81
+2026-08-31 08:20:42,420 INFO   mutate     | P-C-C-C-P              | fitness=0.2362 | val_acc=0.7436 | bal_acc=0.7644 | min_recall=0.7193 | params=70
+2026-08-31 08:20:42,421 INFO   mutate     | C-C-C-C-P-C-P          | fitness=0.2964 | val_acc=0.6795 | bal_acc=0.7055 | min_recall=0.6491 | params=83
+2026-08-31 08:20:42,421 INFO Best so far → val_acc=0.7436  bal_acc=0.7644  min_recall=0.7193  fitness=0.2362  params=70  id=36016739…
+2026-08-31 08:20:42,425 INFO Memory table saved.
+2026-08-31 08:20:42,425 INFO 
+=== Evo step 10/10 ===
+2026-08-31 08:20:42,425 INFO Top-3: 36016739… fit=0.2362  |  15884763… fit=0.2403  |  -8531793… fit=0.2524
+2026-08-31 08:20:42,441 INFO Generated 9 valid novel children
+2026-08-31 10:23:28,636 INFO   crossover  | P-C-C-P                | fitness=0.3649 | val_acc=0.6923 | bal_acc=0.6692 | min_recall=0.6190 | params=48
+2026-08-31 10:23:28,638 INFO   crossover  | P-C-C-C-C-C-C-P        | fitness=0.3139 | val_acc=0.7179 | bal_acc=0.7168 | min_recall=0.7143 | params=112
+2026-08-31 10:23:28,639 INFO   crossover  | C-C-C-P                | fitness=0.3573 | val_acc=0.7179 | bal_acc=0.6867 | min_recall=0.6190 | params=72
+2026-08-31 10:23:28,641 INFO   crossover  | C-C-C-C-P              | fitness=0.3315 | val_acc=0.7308 | bal_acc=0.7105 | min_recall=0.6667 | params=119
+2026-08-31 10:23:28,642 INFO   crossover  | P-C-C-C-C-C-P          | fitness=0.2613 | val_acc=0.7692 | bal_acc=0.7669 | min_recall=0.7619 | params=100
+2026-08-31 10:23:28,644 INFO   crossover  | P-C-C-C-P-P            | fitness=0.2882 | val_acc=0.7564 | bal_acc=0.7431 | min_recall=0.7143 | params=62
+2026-08-31 10:23:28,645 INFO   mutate     | P-P-C-C-C-P            | fitness=0.2476 | val_acc=0.7179 | bal_acc=0.7469 | min_recall=0.6842 | params=62
+2026-08-31 10:23:28,651 INFO   mutate     | C-C-C-C-C-C-C-C-P-C    | fitness=0.2265 | val_acc=0.7436 | bal_acc=0.7794 | min_recall=0.7018 | params=137
+2026-08-31 10:23:28,653 INFO   mutate     | P-C-P                  | fitness=0.3794 | val_acc=0.5769 | bal_acc=0.6053 | min_recall=0.5439 | params=26
+2026-08-31 10:23:28,653 INFO Best so far → val_acc=0.7436  bal_acc=0.7794  min_recall=0.7018  fitness=0.2265  params=137  id=88680219…
+2026-08-31 10:23:28,659 INFO Memory table saved.
+2026-08-31 10:23:28,659 INFO 
+=== SEARCH COMPLETE ===
+2026-08-31 10:23:28,659 INFO Best val_acc  : 0.7436
+2026-08-31 10:23:28,659 INFO Best bal_acc  : 0.7794  (mean per-class recall)
+2026-08-31 10:23:28,659 INFO Min recall    : 0.7018  (worst class)
+2026-08-31 10:23:28,659 INFO Best fitness  : 0.2265
+2026-08-31 10:23:28,659 INFO Params        : 137
+2026-08-31 10:23:28,659 INFO Layers        : 10  (9 conv + 1 pool)
+2026-08-31 10:23:28,659 INFO Circuit structure:
+2026-08-31 10:23:28,659 INFO   Structure: C-C-C-C-C-C-C-C-P-C  (10 layers = 9 conv + 1 pool)
+2026-08-31 10:23:28,659 INFO   Layer 0 CONV  gate=U_SO4      stride=3 step=5 offset=0 boundary=periodic
+2026-08-31 10:23:28,659 INFO   Layer 1 CONV  gate=U_SU4      stride=7 step=4 offset=0 boundary=open
+2026-08-31 10:23:28,659 INFO   Layer 2 CONV  gate=U_14       stride=1 step=1 offset=0 boundary=open
+2026-08-31 10:23:28,659 INFO   Layer 3 CONV  gate=U_9        stride=4 step=2 offset=0 boundary=open
+2026-08-31 10:23:28,659 INFO   Layer 4 CONV  gate=U_13       stride=4 step=2 offset=1 boundary=periodic
+2026-08-31 10:23:28,659 INFO   Layer 5 CONV  gate=U_15       stride=7 step=6 offset=0 boundary=open
+2026-08-31 10:23:28,660 INFO   Layer 6 CONV  gate=U_TTN      stride=3 step=7 offset=0 boundary=periodic
+2026-08-31 10:23:28,660 INFO   Layer 7 CONV  gate=U_5        stride=6 step=6 offset=0 boundary=periodic
+2026-08-31 10:23:28,660 INFO   Layer 8 POOL  gate=pool_ansatz  pattern=0!0
+2026-08-31 10:23:28,660 INFO   Layer 9 CONV  gate=U_6        stride=3 step=1 offset=3 boundary=open
+2026-08-31 10:23:28,661 INFO   Qubits surviving: 2 → [0, 7]  | readout wires = [0]
+2026-08-31 10:23:28,661 INFO 
+============================================================
+2026-08-31 10:23:28,661 INFO FINAL TRAINING — BreastMNIST binary QCNN
+2026-08-31 10:23:28,661 INFO ============================================================
+2026-08-31 10:23:28,661 INFO   Structure: C-C-C-C-C-C-C-C-P-C  (10 layers = 9 conv + 1 pool)
+2026-08-31 10:23:28,661 INFO   Layer 0 CONV  gate=U_SO4      stride=3 step=5 offset=0 boundary=periodic
+2026-08-31 10:23:28,661 INFO   Layer 1 CONV  gate=U_SU4      stride=7 step=4 offset=0 boundary=open
+2026-08-31 10:23:28,661 INFO   Layer 2 CONV  gate=U_14       stride=1 step=1 offset=0 boundary=open
+2026-08-31 10:23:28,661 INFO   Layer 3 CONV  gate=U_9        stride=4 step=2 offset=0 boundary=open
+2026-08-31 10:23:28,661 INFO   Layer 4 CONV  gate=U_13       stride=4 step=2 offset=1 boundary=periodic
+2026-08-31 10:23:28,661 INFO   Layer 5 CONV  gate=U_15       stride=7 step=6 offset=0 boundary=open
+2026-08-31 10:23:28,662 INFO   Layer 6 CONV  gate=U_TTN      stride=3 step=7 offset=0 boundary=periodic
+2026-08-31 10:23:28,662 INFO   Layer 7 CONV  gate=U_5        stride=6 step=6 offset=0 boundary=periodic
+2026-08-31 10:23:28,662 INFO   Layer 8 POOL  gate=pool_ansatz  pattern=0!0
+2026-08-31 10:23:28,662 INFO   Layer 9 CONV  gate=U_6        stride=3 step=1 offset=3 boundary=open
+2026-08-31 10:23:28,663 INFO   Qubits surviving: 2 → [0, 7]  | readout wires = [0]
+2026-08-31 10:23:28,665 INFO Circuit: 10 layers (9 conv + 1 pool), 137 trainable parameters.
+2026-08-31 10:25:03,578 INFO Epoch    1/200 | loss=0.6781 | val_acc=0.5769 | bal_acc=0.5602 | min_recall=0.524 | lr=0.005000
+2026-08-31 11:04:45,709 INFO Epoch   20/200 | loss=0.5995 | val_acc=0.7179 | bal_acc=0.6867 | min_recall=0.619 | lr=0.005000
+2026-08-31 11:50:28,225 INFO Epoch   40/200 | loss=0.5891 | val_acc=0.7692 | bal_acc=0.7368 | min_recall=0.667 | lr=0.005000
+2026-08-31 12:30:34,667 INFO Epoch   60/200 | loss=0.5859 | val_acc=0.7179 | bal_acc=0.7168 | min_recall=0.714 | lr=0.002500
+2026-08-31 12:55:23,317 INFO Epoch   80/200 | loss=0.5781 | val_acc=0.7564 | bal_acc=0.7431 | min_recall=0.714 | lr=0.002500
+2026-08-31 13:24:34,235 INFO Epoch  100/200 | loss=0.5801 | val_acc=0.7179 | bal_acc=0.7168 | min_recall=0.714 | lr=0.001250
+2026-08-31 13:51:10,608 INFO Epoch  120/200 | loss=0.5811 | val_acc=0.7051 | bal_acc=0.7080 | min_recall=0.702 | lr=0.001250
+2026-08-31 14:22:05,247 INFO Epoch  140/200 | loss=0.5805 | val_acc=0.7051 | bal_acc=0.6930 | min_recall=0.667 | lr=0.001250
+2026-08-31 14:49:24,319 INFO Epoch  160/200 | loss=0.5797 | val_acc=0.7179 | bal_acc=0.7018 | min_recall=0.667 | lr=0.000625
+2026-08-31 15:16:58,766 INFO Epoch  180/200 | loss=0.5754 | val_acc=0.7308 | bal_acc=0.7105 | min_recall=0.667 | lr=0.000625
+2026-08-31 15:45:52,619 INFO Epoch  200/200 | loss=0.5718 | val_acc=0.7308 | bal_acc=0.7105 | min_recall=0.667 | lr=0.000313
+2026-08-31 15:45:52,620 INFO Training log saved → experiments/pca16/sweep/baseline_001/training_log.csv
+2026-08-31 15:45:52,620 INFO Best val fitness: 0.2439
+2026-08-31 15:45:52,620 INFO 
+--- Test evaluation (best-val checkpoint) ---
+2026-08-31 15:46:07,696 INFO Test accuracy    : 0.6949
+Test bal. acc    : 0.7318  (mean per-class recall)
+Per-class recall : ['0.8125', '0.6512']
+Min recall       : 0.6512
+Test ROC-AUC OvR : 0.7951
+2026-08-31 15:46:07,705 INFO 
+               precision    recall  f1-score   support
+
+    Malignant       0.46      0.81      0.59        32
+Normal/Benign       0.90      0.65      0.76        86
+
+     accuracy                           0.69       118
+    macro avg       0.68      0.73      0.67       118
+ weighted avg       0.78      0.69      0.71       118
+
+2026-08-31 15:46:08,504 INFO Plots saved.
+2026-08-31 15:46:09,327 INFO Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: Non-scalable fonts are not supported
+2026-08-31 15:46:11,492 INFO Circuit diagram saved.
+2026-08-31 15:46:11,508 INFO 
+Run 'baseline' complete → {'accuracy': 0.6949152542372882, 'bal_acc': 0.7318313951840258, 'per_class_recalls': [0.8124999997460938, 0.6511627906219578], 'roc_auc_ovr': 0.7950581395348837}
+2026-08-31 15:46:11,508 INFO 
+>>> PCA-16 sweep run 2/11: lr_high

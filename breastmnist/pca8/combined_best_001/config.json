@@ -1,0 +1,35 @@
+{
+  "label": "combined_best",
+  "dataset": "breastmnist",
+  "task": "binary (malignant vs. normal/benign)",
+  "feature_extraction": "pca",
+  "pca_components": 8,
+  "encoding": "single (RY per qubit)",
+  "n_classes": 2,
+  "class_names": [
+    "Malignant",
+    "Normal/Benign"
+  ],
+  "W_CLASS": [
+    0.85,
+    0.15
+  ],
+  "N_QUBITS": 8,
+  "N_READOUT_QUBITS": 1,
+  "MIN_LAYERS": 3,
+  "MAX_LAYERS": 12,
+  "MIN_CONV_LAYERS": 1,
+  "MIN_POOL_LAYERS": 2,
+  "P_CONV": 0.7,
+  "LR_EVAL": 0.01,
+  "N_EPOCHS_EVAL": 80,
+  "BATCH_SIZE_EVAL": 64,
+  "INIT_POP": 20,
+  "MAX_EVO_STEPS": 15,
+  "L1": 0.0005,
+  "L2": 0.0001,
+  "L3": 0.002,
+  "MIN_RECALL_TARGET": 0.1,
+  "FINAL_N_EPOCHS": 200,
+  "FINAL_LR": 0.005
+}

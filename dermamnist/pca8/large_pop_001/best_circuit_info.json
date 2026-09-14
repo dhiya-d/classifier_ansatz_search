@@ -1,0 +1,38 @@
+{
+  "motif_id": "7061224304148938467",
+  "val_acc": 0.40681362725450904,
+  "fitness": 0.6694522616880079,
+  "bal_acc": 0.36780357767851146,
+  "min_recall": 0.15686274506728182,
+  "n_params": 203,
+  "n_gate_arities": 34,
+  "generation": 0,
+  "evo_step": 0,
+  "mutation_type": "random",
+  "n_layers": 3,
+  "n_conv_layers": 3,
+  "n_pool_layers": 0,
+  "layer_signature": "C-C-C",
+  "class_names": [
+    "akiec",
+    "bcc",
+    "bkl",
+    "df",
+    "mel",
+    "nv",
+    "vasc"
+  ],
+  "W_CLASS": [
+    0.08,
+    0.14,
+    0.125,
+    0.125,
+    0.28,
+    0.125,
+    0.125
+  ],
+  "N_QUBITS": 8,
+  "N_READOUT_QUBITS": 3,
+  "PCA_COMPONENTS": 8,
+  "encoding": "single (RY per qubit)"
+}

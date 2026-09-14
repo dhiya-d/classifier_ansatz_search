@@ -1,0 +1,117 @@
+{
+  "layers": [
+    {
+      "type": "Qmask",
+      "mapping": "pool_U",
+      "global_pattern": "*1*",
+      "strides": [
+        2,
+        5,
+        5
+      ],
+      "steps": [
+        2,
+        1,
+        4
+      ],
+      "offsets": [
+        0,
+        0,
+        0
+      ],
+      "boundaries": [
+        "open",
+        "open",
+        "periodic"
+      ]
+    },
+    {
+      "type": "Qmask",
+      "mapping": "pool_U",
+      "global_pattern": "*1",
+      "strides": [
+        6,
+        3,
+        2
+      ],
+      "steps": [
+        2,
+        6,
+        7
+      ],
+      "offsets": [
+        1,
+        1,
+        1
+      ],
+      "boundaries": [
+        "open",
+        "open",
+        "periodic"
+      ]
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_SO4",
+      "stride": 1,
+      "step": 2,
+      "offset": 1,
+      "boundary": "open",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_14",
+      "stride": 1,
+      "step": 3,
+      "offset": 3,
+      "boundary": "periodic",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_SU4",
+      "stride": 3,
+      "step": 2,
+      "offset": 0,
+      "boundary": "periodic",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_6",
+      "stride": 1,
+      "step": 1,
+      "offset": 0,
+      "boundary": "periodic",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_13",
+      "stride": 7,
+      "step": 5,
+      "offset": 0,
+      "boundary": "periodic",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_6",
+      "stride": 3,
+      "step": 3,
+      "offset": 1,
+      "boundary": "periodic",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_gate",
+      "stride": 7,
+      "step": 2,
+      "offset": 0,
+      "boundary": "open",
+      "share_weights": false
+    }
+  ]
+}

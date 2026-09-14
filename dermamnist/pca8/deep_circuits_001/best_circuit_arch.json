@@ -1,0 +1,101 @@
+{
+  "layers": [
+    {
+      "type": "Qcycle",
+      "mapping": "U_13",
+      "stride": 2,
+      "step": 5,
+      "offset": 1,
+      "boundary": "periodic",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_9",
+      "stride": 4,
+      "step": 6,
+      "offset": 2,
+      "boundary": "open",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_SU4",
+      "stride": 6,
+      "step": 7,
+      "offset": 1,
+      "boundary": "periodic",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_5",
+      "stride": 7,
+      "step": 6,
+      "offset": 1,
+      "boundary": "periodic",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_6",
+      "stride": 6,
+      "step": 6,
+      "offset": 0,
+      "boundary": "periodic",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_SO4",
+      "stride": 1,
+      "step": 1,
+      "offset": 0,
+      "boundary": "open",
+      "share_weights": false
+    },
+    {
+      "type": "Qmask",
+      "mapping": "pool_ansatz",
+      "global_pattern": "!*",
+      "strides": [
+        6,
+        1,
+        5
+      ],
+      "steps": [
+        5,
+        2,
+        6
+      ],
+      "offsets": [
+        2,
+        3,
+        0
+      ],
+      "boundaries": [
+        "periodic",
+        "periodic",
+        "periodic"
+      ]
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_gate",
+      "stride": 7,
+      "step": 4,
+      "offset": 1,
+      "boundary": "periodic",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_15",
+      "stride": 1,
+      "step": 5,
+      "offset": 1,
+      "boundary": "open",
+      "share_weights": false
+    }
+  ]
+}

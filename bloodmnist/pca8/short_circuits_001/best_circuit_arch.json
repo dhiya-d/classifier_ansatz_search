@@ -1,0 +1,49 @@
+{
+  "layers": [
+    {
+      "type": "Qcycle",
+      "mapping": "U_TTN",
+      "stride": 4,
+      "step": 5,
+      "offset": 1,
+      "boundary": "open",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_6",
+      "stride": 3,
+      "step": 1,
+      "offset": 3,
+      "boundary": "periodic",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_gate",
+      "stride": 7,
+      "step": 1,
+      "offset": 0,
+      "boundary": "periodic",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_13",
+      "stride": 4,
+      "step": 2,
+      "offset": 0,
+      "boundary": "periodic",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_gate",
+      "stride": 7,
+      "step": 1,
+      "offset": 0,
+      "boundary": "periodic",
+      "share_weights": false
+    }
+  ]
+}

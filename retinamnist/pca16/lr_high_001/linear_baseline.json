@@ -1,0 +1,33 @@
+{
+  "description": "Logistic regression on the same 16 PCA components fed to the QCNN. Shows the classification signal available in the compressed representation before any quantum processing.",
+  "n_features": 16,
+  "n_train": 2140,
+  "n_val": 158,
+  "n_test": 244,
+  "results": {
+    "val": {
+      "accuracy": 0.569620253164557,
+      "bal_acc": 0.49565146132047544,
+      "per_class_recalls": [
+        0.7746478872148383,
+        0.4444444441975308,
+        0.249999999921875,
+        0.5135135133747261
+      ],
+      "min_recall": 0.249999999921875,
+      "roc_auc_ovr": 0.7837849280789297
+    },
+    "test": {
+      "accuracy": 0.5573770491803278,
+      "bal_acc": 0.48494975465483636,
+      "per_class_recalls": [
+        0.7129629628969479,
+        0.31034482747919145,
+        0.319999999936,
+        0.5964912279655279
+      ],
+      "min_recall": 0.31034482747919145,
+      "roc_auc_ovr": 0.7656240520735058
+    }
+  }
+}

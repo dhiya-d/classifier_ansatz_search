@@ -1,0 +1,23 @@
+{
+  "n_params": 130,
+  "n_layers": 5,
+  "n_conv_layers": 4,
+  "n_pool_layers": 1,
+  "layer_signature": "C-P-C-C-C",
+  "n_epochs": 200,
+  "lr": 0.005,
+  "lr_step": 50,
+  "lr_gamma": 0.5,
+  "batch_size": 25,
+  "best_val_fitness": 0.5056355212349619,
+  "test_accuracy": 0.5081967213114754,
+  "test_bal_acc": 0.44081249572234704,
+  "test_per_class": [
+    0.6203703703129287,
+    0.2758620688703924,
+    0.059999999988,
+    0.8070175437180671
+  ],
+  "test_min_recall": 0.059999999988,
+  "test_roc_auc_ovr": 0.7128611090988142
+}

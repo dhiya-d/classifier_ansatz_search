@@ -1,0 +1,102 @@
+2026-08-26 17:01:07,116 INFO RUN_DIR    : experiments/pca8/sweep/short_circuits_001
+2026-08-26 17:01:07,116 INFO SELECTION  : best
+2026-08-26 17:01:07,116 INFO OUTPUT_DIR : experiments/pca8/sweep/short_circuits_001/winner_retrain
+2026-08-26 17:01:07,116 INFO PCA_COMPONENTS set from experiments/pca8/sweep/short_circuits_001/config.json: 8 (single encoding)
+2026-08-26 17:01:07,118 INFO Cache contains 100 circuits.
+2026-08-26 17:01:07,118 INFO Memory table contains 100 entries.
+2026-08-26 17:01:07,119 INFO Selected rank 1: id=-734719004  fitness=0.5252  params=130  [C-P-C-C-C]
+2026-08-26 17:01:07,119 INFO 
+--- Search metrics (from the evolutionary run) ---
+2026-08-26 17:01:07,119 INFO   Fitness      : 0.5252
+2026-08-26 17:01:07,119 INFO   Val accuracy : 0.6203
+2026-08-26 17:01:07,119 INFO   Balanced acc : 0.5136
+2026-08-26 17:01:07,119 INFO   Min recall   : 0.2222
+2026-08-26 17:01:07,119 INFO   Generation   : 3
+2026-08-26 17:01:07,119 INFO   Evo step     : 6
+2026-08-26 17:01:07,119 INFO   Origin       : crossover
+2026-08-26 17:01:07,119 INFO Loading RetinaMNIST...
+2026-08-26 17:01:07,124 INFO No saved pipeline — refitting PCA (same seed).
+2026-08-26 17:01:07,738 INFO Data ready — train: (2140, 8)  val: (158, 8)  test: (244, 8)
+2026-08-26 17:01:07,740 INFO 
+Circuit structure:
+2026-08-26 17:01:07,743 INFO   Structure: C-P-C-C-C  (5 layers = 4 conv + 1 pool)
+2026-08-26 17:01:07,743 INFO   Layer 0 CONV  gate=U_15       stride=5 step=1 offset=0 boundary=periodic
+2026-08-26 17:01:07,743 INFO   Layer 1 POOL  gate=pool_ansatz  pattern=*1*
+2026-08-26 17:01:07,743 INFO   Layer 2 CONV  gate=U_SO4      stride=3 step=5 offset=1 boundary=periodic
+2026-08-26 17:01:07,743 INFO   Layer 3 CONV  gate=U_13       stride=3 step=1 offset=0 boundary=periodic
+2026-08-26 17:01:07,747 INFO   Layer 4 CONV  gate=U_13       stride=3 step=1 offset=0 boundary=periodic
+2026-08-26 17:01:07,747 INFO   Qubits surviving: 7 → [0, 1, 2, 3, 5, 6, 7]  | readout wires = [0, 1]
+2026-08-26 17:01:07,747 INFO Parameters: 130 | Layers: 5 (4 conv + 1 pool)
+2026-08-26 17:01:07,748 INFO Training config: epochs=200  lr=0.005  batch=25  lr_step=50  lr_gamma=0.5
+2026-08-26 17:02:59,101 INFO Epoch    1/200 | loss=1.3957 | val_acc=0.4367 | bal=0.3792 | min_rec=0.125 | lr=0.005000
+2026-08-26 17:56:45,823 INFO Epoch   20/200 | loss=1.2306 | val_acc=0.5696 | bal=0.4931 | min_rec=0.156 | lr=0.005000
+2026-08-26 18:53:21,148 INFO Epoch   40/200 | loss=1.2219 | val_acc=0.5886 | bal=0.5024 | min_rec=0.156 | lr=0.005000
+2026-08-26 19:44:06,952 INFO Epoch   60/200 | loss=1.2123 | val_acc=0.5570 | bal=0.4757 | min_rec=0.156 | lr=0.002500
+2026-08-26 19:51:38,713 INFO PCA_COMPONENTS set from experiments/pca8/sweep/short_circuits_001/config.json: 8 (single encoding)
+2026-08-26 19:51:38,715 INFO Selected rank 1: id=-734719004  fitness=0.5252  params=130  [C-P-C-C-C]
+2026-08-26 19:51:39,725 INFO Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: Can not load face (unknown file format; error code 0x2)
+2026-08-26 21:48:47,723 INFO RUN_DIR    : experiments/pca8/sweep/short_circuits_001
+2026-08-26 21:48:47,724 INFO SELECTION  : best
+2026-08-26 21:48:47,724 INFO OUTPUT_DIR : experiments/pca8/sweep/short_circuits_001/winner_retrain
+2026-08-26 21:48:47,724 INFO PCA_COMPONENTS set from experiments/pca8/sweep/short_circuits_001/config.json: 8 (single encoding)
+2026-08-26 21:48:47,727 INFO Cache contains 100 circuits.
+2026-08-26 21:48:47,727 INFO Memory table contains 100 entries.
+2026-08-26 21:48:47,727 INFO Selected rank 1: id=-734719004  fitness=0.5252  params=130  [C-P-C-C-C]
+2026-08-26 21:48:47,727 INFO 
+--- Search metrics (from the evolutionary run) ---
+2026-08-26 21:48:47,727 INFO   Fitness      : 0.5252
+2026-08-26 21:48:47,727 INFO   Val accuracy : 0.6203
+2026-08-26 21:48:47,727 INFO   Balanced acc : 0.5136
+2026-08-26 21:48:47,727 INFO   Min recall   : 0.2222
+2026-08-26 21:48:47,727 INFO   Generation   : 3
+2026-08-26 21:48:47,727 INFO   Evo step     : 6
+2026-08-26 21:48:47,727 INFO   Origin       : crossover
+2026-08-26 21:48:47,727 INFO Loading RetinaMNIST...
+2026-08-26 21:48:47,733 INFO No saved pipeline — refitting PCA (same seed).
+2026-08-26 21:48:48,006 INFO Data ready — train: (2140, 8)  val: (158, 8)  test: (244, 8)
+2026-08-26 21:48:48,008 INFO 
+Circuit structure:
+2026-08-26 21:48:48,008 INFO   Structure: C-P-C-C-C  (5 layers = 4 conv + 1 pool)
+2026-08-26 21:48:48,008 INFO   Layer 0 CONV  gate=U_15       stride=5 step=1 offset=0 boundary=periodic
+2026-08-26 21:48:48,008 INFO   Layer 1 POOL  gate=pool_ansatz  pattern=*1*
+2026-08-26 21:48:48,008 INFO   Layer 2 CONV  gate=U_SO4      stride=3 step=5 offset=1 boundary=periodic
+2026-08-26 21:48:48,008 INFO   Layer 3 CONV  gate=U_13       stride=3 step=1 offset=0 boundary=periodic
+2026-08-26 21:48:48,008 INFO   Layer 4 CONV  gate=U_13       stride=3 step=1 offset=0 boundary=periodic
+2026-08-26 21:48:48,008 INFO   Qubits surviving: 7 → [0, 1, 2, 3, 5, 6, 7]  | readout wires = [0, 1]
+2026-08-26 21:48:48,008 INFO Parameters: 130 | Layers: 5 (4 conv + 1 pool)
+2026-08-26 21:48:48,008 INFO Training config: epochs=200  lr=0.005  batch=25  lr_step=50  lr_gamma=0.5
+2026-08-26 21:50:42,828 INFO Epoch    1/200 | loss=1.3987 | val_acc=0.4430 | bal=0.3561 | min_rec=0.167 | lr=0.005000
+2026-08-26 22:28:54,891 INFO Epoch   20/200 | loss=1.2317 | val_acc=0.5506 | bal=0.4493 | min_rec=0.187 | lr=0.005000
+2026-08-26 23:02:36,330 INFO Epoch   40/200 | loss=1.2183 | val_acc=0.5570 | bal=0.4726 | min_rec=0.062 | lr=0.005000
+2026-08-26 23:29:53,248 INFO Epoch   60/200 | loss=1.2084 | val_acc=0.5506 | bal=0.4772 | min_rec=0.094 | lr=0.002500
+2026-08-26 23:59:46,733 INFO Epoch   80/200 | loss=1.2067 | val_acc=0.5633 | bal=0.4868 | min_rec=0.187 | lr=0.002500
+2026-08-27 00:35:39,677 INFO Epoch  100/200 | loss=1.2053 | val_acc=0.5443 | bal=0.4591 | min_rec=0.062 | lr=0.001250
+2026-08-27 01:07:28,605 INFO Epoch  120/200 | loss=1.2018 | val_acc=0.5380 | bal=0.4537 | min_rec=0.219 | lr=0.001250
+2026-08-27 01:39:24,948 INFO Epoch  140/200 | loss=1.2015 | val_acc=0.5380 | bal=0.4483 | min_rec=0.156 | lr=0.001250
+2026-08-27 02:16:54,947 INFO Epoch  160/200 | loss=1.2010 | val_acc=0.5443 | bal=0.4551 | min_rec=0.156 | lr=0.000625
+2026-08-27 02:48:46,293 INFO Epoch  180/200 | loss=1.2007 | val_acc=0.5316 | bal=0.4395 | min_rec=0.094 | lr=0.000625
+2026-08-27 03:16:26,999 INFO Epoch  200/200 | loss=1.2005 | val_acc=0.5570 | bal=0.4664 | min_rec=0.187 | lr=0.000313
+2026-08-27 03:16:27,000 INFO Training log → experiments/pca8/sweep/short_circuits_001/winner_retrain/training_log.csv
+2026-08-27 03:16:27,000 INFO Best val fitness: 0.5056
+2026-08-27 03:16:27,000 INFO 
+--- Test evaluation (best-val checkpoint) ---
+2026-08-27 03:16:30,734 INFO Test accuracy    : 0.5082
+Test bal. acc    : 0.4408
+Per-class recall : ['0.6204', '0.2759', '0.0600', '0.8070']
+Min recall       : 0.0600
+ROC-AUC OvR      : 0.7129
+2026-08-27 03:16:30,736 INFO 
+               precision    recall  f1-score   support
+
+        No DR       0.87      0.62      0.72       108
+    Mild NPDR       0.16      0.28      0.21        29
+Moderate NPDR       0.25      0.06      0.10        50
+   Severe+PDR       0.43      0.81      0.56        57
+
+     accuracy                           0.51       244
+    macro avg       0.43      0.44      0.40       244
+ weighted avg       0.56      0.51      0.50       244
+
+2026-08-27 03:16:31,867 INFO Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: Can not load face (unknown file format; error code 0x2)
+2026-08-27 03:16:32,745 INFO 
+All results saved → experiments/pca8/sweep/short_circuits_001/winner_retrain/

@@ -1,0 +1,126 @@
+{
+  "layers": [
+    {
+      "type": "Qcycle",
+      "mapping": "U_13",
+      "stride": 6,
+      "step": 3,
+      "offset": 2,
+      "boundary": "open",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_SU4",
+      "stride": 5,
+      "step": 6,
+      "offset": 0,
+      "boundary": "open",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_14",
+      "stride": 7,
+      "step": 3,
+      "offset": 0,
+      "boundary": "open",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_15",
+      "stride": 2,
+      "step": 1,
+      "offset": 0,
+      "boundary": "periodic",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_14",
+      "stride": 3,
+      "step": 1,
+      "offset": 0,
+      "boundary": "open",
+      "share_weights": false
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_13",
+      "stride": 1,
+      "step": 1,
+      "offset": 1,
+      "boundary": "open",
+      "share_weights": false
+    },
+    {
+      "type": "Qmask",
+      "mapping": "pool_ansatz",
+      "global_pattern": "*1",
+      "strides": [
+        4,
+        4,
+        2
+      ],
+      "steps": [
+        2,
+        4,
+        1
+      ],
+      "offsets": [
+        1,
+        0,
+        2
+      ],
+      "boundaries": [
+        "periodic",
+        "periodic",
+        "periodic"
+      ]
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_15",
+      "stride": 4,
+      "step": 4,
+      "offset": 1,
+      "boundary": "periodic",
+      "share_weights": false
+    },
+    {
+      "type": "Qmask",
+      "mapping": "pool_ansatz",
+      "global_pattern": "01",
+      "strides": [
+        4,
+        2,
+        4
+      ],
+      "steps": [
+        7,
+        3,
+        6
+      ],
+      "offsets": [
+        3,
+        1,
+        1
+      ],
+      "boundaries": [
+        "periodic",
+        "periodic",
+        "open"
+      ]
+    },
+    {
+      "type": "Qcycle",
+      "mapping": "U_14",
+      "stride": 3,
+      "step": 1,
+      "offset": 0,
+      "boundary": "open",
+      "share_weights": false
+    }
+  ]
+}

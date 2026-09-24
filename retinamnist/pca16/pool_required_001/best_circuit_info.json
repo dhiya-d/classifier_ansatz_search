@@ -1,0 +1,32 @@
+{
+  "motif_id": "-8470627863962049956",
+  "val_acc": 0.5886075949367089,
+  "fitness": 0.5395744101886173,
+  "bal_acc": 0.524246407344863,
+  "min_recall": 0.09374999997070313,
+  "n_params": 203,
+  "n_gate_arities": 36,
+  "generation": 4,
+  "evo_step": 6,
+  "mutation_type": "crossover",
+  "n_layers": 5,
+  "n_conv_layers": 3,
+  "n_pool_layers": 2,
+  "layer_signature": "C-P-C-C-P",
+  "class_names": [
+    "No DR",
+    "Mild NPDR",
+    "Moderate NPDR",
+    "Severe+PDR"
+  ],
+  "W_CLASS": [
+    0.1,
+    0.2,
+    0.3,
+    0.4
+  ],
+  "N_QUBITS": 8,
+  "N_READOUT_QUBITS": 2,
+  "PCA_COMPONENTS": 16,
+  "encoding": "dense (RX + RY per qubit)"
+}

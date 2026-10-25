@@ -80,13 +80,13 @@ python breastmnist/main.py --sweep             # every hyperparameter setting in
 python breastmnist/main.py --sweep-index 0     # one sweep setting
 ```
 
-To run another dataset, replace `breastmnist` with `dermamnist`. Each run writes to `experiments/pca8/…` or `experiments/pca16/…`. A run saves:
+To run another dataset, replace `breastmnist` with `dermamnist`, `retinamnist` or `bloodmnist`. Each run writes to `experiments/pca8/…` or `experiments/pca16/…`. A run saves:
 - the best circuit (`best_circuit.png`, `best_circuit_arch.json`, `best_params.pt`)
 - training curves, a confusion matrix and per-class recall plots
 - the logistic-regression baseline
 - the full search log
 
-All hyperparameters are in each dataset's `config.py`. These include the population size, number of evolution steps, layer limits, class weights, regularisation, and the sweep grid. `winner.py` lets you list every circuit a finished search found and retrain any of them.
+All hyperparameters are in each dataset's `config.py`. These include the population size, number of evolution steps, layer limits, class weights, regularisation, and the sweep grid. For BreastMNIST and DermaMNIST, `winner.py` lets you list every circuit a finished search found and retrain any of them.
 
 ## Results
 
@@ -101,7 +101,7 @@ The table reports **balanced accuracy on the held-out test set** (the mean of th
 | RetinaMNIST | 4 | 8 | 0.25 | 0.48 | 0.45 | 0.43 – 0.49 | 10 |
 | RetinaMNIST | 4 | 16 | 0.25 | 0.48 | 0.45 | 0.36 – 0.50 | 10 |
 | BloodMNIST | 8 | 8 | 0.12 | 0.63 | 0.53 | 0.53 – 0.58 | 11 |
-| BloodMNIST | 8 | 16 | 0.12 | 0.68 | 0.55 | 0.51 – 0.56 | 5 |
+| BloodMNIST | 8 | 16 | 0.12 | 0.68 | 0.55 | 0.51 – 0.56 | 11 |
 
 On the binary BreastMNIST task, the evolved circuits match or beat the classical baseline. On DermaMNIST and RetinaMNIST they are within a few points of it. BloodMNIST, with 8 classes, is the hardest for 8-qubit circuits. On every dataset, the circuits are well above chance. Each run's full outputs are stored in `<dataset>/pca8/` and `<dataset>/pca16/`.
 
@@ -120,8 +120,8 @@ breastmnist/      search code and results for BreastMNIST
   serialisation.py  save and load circuits as JSON
   pca8/, pca16/     results from the hyperparameter sweep
 dermamnist/       same structure, for 7 classes
-retinamnist/      results (search code to be added)
-bloodmnist/       results (search code to be added)
+retinamnist/      same structure, for 4 classes (no winner.py)
+bloodmnist/       same structure, for 8 classes (no winner.py)
 download_data.py  fetches MedMNIST and writes the .npy files
 ```
 

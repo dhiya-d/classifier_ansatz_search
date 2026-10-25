@@ -1,0 +1,17 @@
+# Downloaded data (recreate with: python download_data.py)
+*/train_*.npy
+*/val_*.npy
+*/test_*.npy
+.medmnist_cache/
+
+# Search caches and large intermediate files
+motif_cache.db*
+memory_table.pkl
+
+# New runs (move finished results you want to share into <dataset>/pcaN/)
+experiments/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

@@ -4,7 +4,7 @@ A genetic algorithm that **designs quantum convolutional classifier circuits aut
 
 Each candidate circuit is a variable-length sequence of [HierarQcal](https://github.com/matt-lourens/hierarqcal) convolution (`Qcycle`) and pooling (`Qmask`) layers. Crossover and mutation breed new architectures, and the fittest ones survive. The circuits are built and trained in [PennyLane](https://pennylane.ai) on 8 qubits. They are tested on four [MedMNIST](https://medmnist.com) datasets.
 
-This code is part of my MSc research at Stellenbosch University and NITheCS, supervised by Prof. Francesco Petruccione and Dr Ilya Sinayskiy. A write-up is in preparation.
+This code is part of my MSc research at Stellenbosch University and NITheCS, supervised by Prof. Francesco Petruccione and Prof. Ilya Sinayskiy. A write-up is in preparation.
 
 <p align="center">
   <img src="docs/evolved_circuit.png" alt="An evolved 8-qubit circuit for BreastMNIST" width="720">

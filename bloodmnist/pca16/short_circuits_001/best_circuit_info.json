@@ -1,0 +1,40 @@
+{
+  "motif_id": "-2663274861332102379",
+  "val_acc": 0.4211143695014663,
+  "fitness": 0.5412107677972098,
+  "bal_acc": 0.5048962205722338,
+  "min_recall": 0.058823529409729285,
+  "n_params": 222,
+  "n_gate_arities": 46,
+  "generation": 0,
+  "evo_step": 0,
+  "mutation_type": "random",
+  "n_layers": 5,
+  "n_conv_layers": 4,
+  "n_pool_layers": 1,
+  "layer_signature": "C-C-C-C-P",
+  "class_names": [
+    "basophil",
+    "eosinophil",
+    "erythroblast",
+    "ig",
+    "lymphocyte",
+    "monocyte",
+    "neutrophil",
+    "platelet"
+  ],
+  "W_CLASS": [
+    0.187,
+    0.073,
+    0.147,
+    0.079,
+    0.188,
+    0.161,
+    0.068,
+    0.097
+  ],
+  "N_QUBITS": 8,
+  "N_READOUT_QUBITS": 3,
+  "PCA_COMPONENTS": 16,
+  "encoding": "dense (RX + RY per qubit)"
+}

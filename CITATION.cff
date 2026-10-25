@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "Evolutionary search for quantum medical-image classifiers"
+abstract: >-
+  A genetic algorithm that designs variable-length quantum convolutional
+  classifier circuits (HierarQcal + PennyLane) for MedMNIST medical-image
+  classification, searching over 8-qubit single and dense PCA angle encodings.
+authors:
+  - family-names: Dharampal
+    given-names: Dhiya
+    affiliation: "Stellenbosch University; National Institute for Theoretical and Computational Sciences (NITheCS)"
+    orcid: "https://orcid.org/0000-0002-6821-3171"
+repository-code: "https://github.com/dhiya-d/classifier_ansatz_search"
+url: "https://dhiya-d.github.io/research.html"
+keywords:
+  - quantum machine learning
+  - quantum convolutional neural networks
+  - evolutionary algorithms
+  - neural architecture search
+  - medical imaging
+  - MedMNIST
+license: MIT
+version: "0.1.0"
+date-released: "2026-10-25"

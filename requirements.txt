@@ -1,0 +1,11 @@
+# Python 3.10+
+pennylane
+torch
+hierarqcal
+scikit-learn
+numpy
+matplotlib
+ray
+dill
+joblib
+medmnist      # only needed by download_data.py
